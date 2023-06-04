@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PICS</title>
+    <script src="../js/picm.js"></script>
+    <link rel="stylesheet" type="text/css" href="./pics.css">
+</head>
+<header>
+  <div class="header">
+    <a href="../index.html" class="button">Volver a Inicio</a>
+    <a href="./pics.html" class="button">Ir a PICS</a>
+    <a href="./pfcs.html" class="button">Ir a PFCS</a>
+    <a href="./pfcm.html" class="button">Ir a PFCM</a>
+  </div>
+</header>
+<body>
+    <h1>PICS</h1>
+<div class="ContenedorInput">
+  <div>
+    <label for="usuariosOpciones">Opciones de usuarios:</label>
+    <select id="usuariosOpciones">
+      <option value="n usuarios">n-usuario</option>
+        <option value="num1 o num2">num1 o num2</option>
+        <option value="maximo">Maximo</option>
+        <option value="al menos">al menos</option>
+    </select>
+</div>
+
+<div id="nClientes2" style="display: none;">
+    <label for="nClientes2">Número de clientes 2:</label>
+    <input type="number" id="nClientes2" />
+</div>
+<div>
+    <label for="lambda">Lambda:</label>
+    <input type="number" id="lambda" />
+</div>
+
+<div>
+    <label for="mu">Mu:</label>
+    <input type="number" id="mu" />
+</div>
+
+<div>
+  <div>
+    <label for="servidor">Numero de servidores:</label>
+    <input type="number" id="servidor" />
+  </div>
+    <label for="nClientes">Número de clientes:</label>
+    <input type="number" id="nClientes" />
+</div>
+
+<div>
+    <label for="horas">Horas:</label>
+    <input type="number" id="horas" />
+</div>
+
+<div>
+    <label for="costoOpciones">Opciones de costo:</label>
+    <select id="costoOpciones">
+        <option value="Costo diario por el tiempo de espera en cola">Costo diario por el tiempo de espera en cola</option>
+        <option value="Costo diario por el tiempo en el sistema">Costo diario por el tiempo en el sistema</option>
+        <option value="Costo diario por el tiempo de servicio">Costo diario por el tiempo de servicio</option>
+        <option value="Costo diario del servidor">Costo diario del servidor</option>
+    </select>
+</div>
+
+<div>
+    <label for="costo">Costo:</label>
+    <input type="number" id="costo" />
+</div>
+
+<div>
+    <label for="usuariosOpcionesSistemaCola">Opciones de usuarios en el sistema o cola:</label>
+    <select id="usuariosOpcionesSistemaCola">
+        <option value="sistema">Sistema</option>
+        <option value="cola">Cola</option>
+    </select>
+</div>
+
+<button onclick="condicionEstabilidad()">Calcular</button>
+</div>
+  
+    <div id="fondo">
+        <div id="contenidoPics">
+            <div id="respuesta"></div>
+        </div>
+    </div>
+</body>
+</html>
